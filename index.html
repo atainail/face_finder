@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header> 
+        <div class="title">
+            <h1 class="">Welcome to Face Finder </h1>    
+        </div>   
+        
+        <h2>Just upload a picture and you will get back a new photo with just faces!</h2>    
+    </header>
+
+    <main>
+        <form>
+            <div class="upload-section">
+            <!-- <button>skndmksd</button>   -->
+
+            <input style="display: none" type="file"  id="img-search" name="img-search" accept="image/png, image/jpeg" >
+                   
+                <!-- <button class=""> -->
+                    <label class="search" for="img-search">
+                        click to upload <i class="bi bi-upload"></i> 
+                    </label>     
+                <!-- </button> -->
+                 
+            
+            </div>
+            
+        </form> 
+
+
+      <div class="face-section">
+        
+        <div class="original-pic">
+        <canvas id="canvas1" width="100vw" height="100vh"></canvas>    
+        </div>
+        <div class="face-found">
+
+            <canvas id="canvas2" width="100%" height="100%"></canvas> 
+        </div>
+        
+    </div>  
+        
+    </main>
+    
+    
+<!-- JQuery -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="script.js"></script>
+    
+    
+</body>
+
+</html>
